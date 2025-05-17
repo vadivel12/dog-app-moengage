@@ -1,0 +1,8 @@
+// for user database
+
+CREATE TABLE `dog_app`.`users` (`id` INT NOT NULL AUTO_INCREMENT , `email` VARCHAR(100) NOT NULL , `password` VARCHAR(100) NOT NULL , PRIMARY KEY (`id`));
+
+
+// for lists database
+
+CREATE TABLE `dog_app`.`listss` (`user_email` VARCHAR(100) NOT NULL AUTO_INCREMENT , `name` VARCHAR(50) NOT NULL , `img` TEXT NOT NULL , `created_at` DATE NOT NULL , PRIMARY KEY (`user_email`));
